@@ -4,6 +4,7 @@
 		<title>Super Mario Type</title>
 		<link rel="icon" type="image/png" href="path/to/favicon.png">
 		<link rel="stylesheet" type="text/css" href="SuperMario.css">
+		
 		<style>
 			.Mush {
 				font-size: 50px;
@@ -20,12 +21,18 @@
 		
 		<h1>Type Text Below To Convert To A Super Mario World!</h1>
 		<h3>Type Text Below To Create A Level. A Graph On How Is Found Below</h2>
-		<input type='text' id='Mario' placeholder="Mbooodaoaadaoaealfaagaahjjjjjhaaaqap"/>
+		<h3><input type='text' id='Mario' placeholder="Mbooodaoaadaoaealfaagaahjjjjjhaaaqap"/>
+	<img src="http://www.cleanenergyresourceteams.org/sites/default/files/share-megaphone.gif" onclick="Share()" width="50px"></h3>
 		<h1 style="" class="Mush" id="Mush">Mbooodaoaadaoaealfaagaahjjjjjhaaaqap</h2>
 		<img id="Graph" src="Mushroom_Map.png">
 
 
 		<script>
+			function Share() {
+				var y = "http://www.herohamp.xyz/SuperMarioType/Show.html?Level=";
+				var x = document.getElementById('Mario').value;
+				alert(y+x);
+			}
 			window.setInterval(function(){
 				if (document.getElementById('Mario').value != "") {
 			document.getElementById('Mush').innerHTML = document.getElementById('Mario').value;}
