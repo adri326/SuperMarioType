@@ -1,0 +1,35 @@
+<!DOCTYPE HTML>
+<html lang="en">
+	<head>
+		<title>Super Mario Type</title>
+		<link rel="icon" type="image/png" href="path/to/favicon.png">
+		<link rel="stylesheet" type="text/css" href="SuperMario.css">
+		<style>
+			.Mush {
+				font-size: 50px;
+				text-indent: 50px;
+				margin-top: -30px;
+				z-index: 1;
+			}
+			
+		</style>
+	</head>
+	<body>
+		
+		<h1>Here is the Map you were sent!</h1>
+		<h1 style="" class="Mush" id="Mush">Mbooodaoaadaoaealfaagaahjjjjjhaaaqap</h2>
+		<script>
+			function GetUrlValue(VarSearch){
+			var SearchString = window.location.search.substring(1);
+			var VariableArray = SearchString.split('&');
+			for(var i = 0; i < VariableArray.length; i++){
+			var KeyValuePair = VariableArray[i].split('=');
+			if(KeyValuePair[0] == VarSearch){
+			return KeyValuePair[1];
+			}
+			}
+			}
+			document.getElementById('Mush').innerHTML = GetUrlValue("Level");
+		</script>
+	</body>
+</html>
