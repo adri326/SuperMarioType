@@ -29,7 +29,8 @@
 			}
 			}
 			}
-			document.getElementById('Mush').innerHTML = GetUrlValue("Level");
+			var str = GetUrlValue("Level");
+			document.getElementById('Mush').innerHTML = str.replace(/%20/g, " ");;
 		</script>
 	</body>
 </html>
