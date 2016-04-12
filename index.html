@@ -1,0 +1,39 @@
+<!DOCTYPE HTML>
+<html lang="en">
+	<head>
+		<title>Super Mario Type</title>
+		<link rel="icon" type="image/png" href="path/to/favicon.png">
+		<link rel="stylesheet" type="text/css" href="SuperMario.css">
+		<style>
+			.Mush {
+				font-size: 50px;
+				text-indent: 50px;
+				margin-top: -30px;
+
+				z-index: 1;
+
+			}
+			
+		</style>
+	</head>
+	<body>
+		
+		<h1>Type Text Below To Convert To A Super Mario World!</h1>
+		<h3>Type Text Below To Create A Level. A Graph On How Is Found Below</h2>
+		<input type='text' id='Mario' value=""/>
+		<h1 style="" class="Mush" id="Mush">Mbooodaoaadaoaealfaagaahjjjjjhaaaqap</h2>
+		<img id="Graph" src="http://img.fontspace.com/gallery/728x2000/3/5c18d88dd2104a72abf13fc1fa96f603.png">
+
+
+		<script>
+			window.setInterval(function(){
+				if (document.getElementById('Mario').value != "") {
+			document.getElementById('Mush').innerHTML = document.getElementById('Mario').value;}
+			else {
+				document.getElementById('Mush').innerHTML = "Mbooodaoaadaoaealfaagaahjjjjjhaaaqap";
+			}
+			}, 10);
+		
+		</script>
+	</body>
+</html>

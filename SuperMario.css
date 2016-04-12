@@ -1,0 +1,8 @@
+@font-face {
+    font-family: MUSHROOM;
+    src: url(MUSHROOM.ttf);
+}
+
+.Mush {
+	font-family: MUSHROOM;
+}
