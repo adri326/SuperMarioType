@@ -35,7 +35,7 @@
 			}
 			window.setInterval(function(){
 				if (document.getElementById('Mario').value != "") {
-			document.getElementById('Mush').innerHTML = document.getElementById('Mario').value;}
+			document.getElementById('Mush').innerHTML = encodeURI(document.getElementById('Mario').value);}
 			else {
 				document.getElementById('Mush').innerHTML = "Mbooodaoaadaoaealfaagaahjjjjjhaaaqap";
 			}
