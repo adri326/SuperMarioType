@@ -23,3 +23,9 @@ img#Graph {
   margin-left: 20%;
   width: 60%;
 }
+#Mario {
+  width: 40em;
+  height: 1.5em;
+  padding-top: 0.25em;
+  padding-bottom: 0.25em;
+}
